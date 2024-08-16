@@ -1,560 +1,17 @@
 [
+///TCC
   {
-		"name": "Mechanized Core",
-		"isNationalWonder": true,
-    "replaces": "Bomb Shelter",
-    "uniqueTo": "The Mechanized",
-		"production": 5,
-		"cityHealth": 400,
-		"science": 4,
-		"gold": 2,
-		"cost": 1,
-		"happiness": 2,
-		"uniques": ["Indicates the capital city",
-			"Provides [4] [Power]",]
-	},
-  {
-		"name": "Solar Power AI",
+		"name": "Sectleading Chamber",
 		"isWonder": true,
-		"uniqueTo": "The Mechanized",
-		"happiness": 3,
+		"uniqueTo": "TCC",
+		"culture": 1,
 		"cost": 1,
+		"specialistSlots": {"Politician": 1},
 		"uniques": [
-			"Provides [4] [Power]",
-			"Free [Gunner Drone] appears",
-			"Free [Guided Missile] appears",
-			"Can only be built [in capital]",
-			"[+1] population [in this city]",
-			"Gain a free [Life Creation Lab] [in this city]"
-		],
-		"quote": "If an Artificial Intelligence could bring as through the fallout of a contaminated desert, they can surely lead us on our way to make to wasteland usable again.",
-		"civilopediaText": [
-			{
-				"text": "If an Artificial Intelligence could bring as through the fallout of a contaminated desert, they can surely lead us on our way to make to wasteland usable again.",
-			},
-		]
-	},
-	{
-		"name": "Track Survivors",
-		"replaces": "Search for Survivors",
-		"uniqueTo": "The Mechanized",
-		"cost": 30,
-		"isNationalWonder": true,
-		"uniques": [
-			"[+3] population [in this city]",
-		]
-	},
-	//[in all cities]
-	//[in this city]
-	//"[+1] population [cityFilter]",
-  	{
-		"name": "Artificial Feedery",
-    		"replaces": "Ranch",
-    		"uniqueTo": "The Mechanized",
-		"requiredNearbyImprovedResources": ["Cattle", "Goats", "Insects"]
-		"food": 1,
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Only available <in cities with a [Life Creation Lab]>",
-		],
-		"requiredTech": "Redomestication"
-	},
-	{
-		"name": "Camp  Of Creation",
-    		"uniqueTo": "The Mechanized",
-		"requiredNearbyImprovedResources": ["Deer", "Hogs", "Furs"]
-		"food": 1,
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Only available <in cities with a [Life Creation Lab]>",
-			"Will not be displayed in Civilopedia",
-		],
-		"requiredTech": "Redomestication"
-	},
-	{
-		"name": "Salvage Ocean Food",
-    		"uniqueTo": "The Mechanized",
-		"requiredNearbyImprovedResources": ["Plankton", "Jellyfish", "Algae"]
-		"food": 1,
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Only available <in cities with a [Life Creation Lab]>",
-			"Will not be displayed in Civilopedia",
-		],
-		"requiredTech": "Sailing"
-	},
-	{
-		"name": "Bio Material Recycling",
-		"replaces": "Greenhouse",
-    		"uniqueTo": "The Mechanized",
-		"food": 4,
-		"requiredNearbyImprovedResources": ["Tubers", "Grain", "Fungus"]
-		"uniques": [
-			"[+2] population [in this city]",
-			"Only available <in cities with a [Life Creation Lab]>",
-		],
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"requiredTech": "Botany"
-	},
-	{
-		"name": "Fish Farm Regulator",
-		"replaces": "Fish Farm",
-    		"uniqueTo": "The Mechanized",
-		"food": 2,
-		"maintenance": 3,
-		"hurryCostModifier": 25,
-		"requiredTech": "Ecology",
-		"uniques": [
-			"[+2] population [in this city]",
-			"Must be next to [Coast]",
-			"[+1 Food] from [Coast] tiles [in this city]"
-		]
-	},
-	{
-		"name": "Freezing Room",
-		"replaces": "Cold Store",
-    		"uniqueTo": "The Mechanized",
-		"maintenance": 1,
-		"requiredNearbyImprovedResources": ["Goats","Cattle","Deer","Algae","Jellyfish","Plankton","Hogs"],
-		"uniques": [
-			"[+1 Production] from [Permafrost] tiles [in this city]",
-			"[+1] population [in this city]",
-			"Consumes [1] [Power]"
-		],
-		"hurryCostModifier": 25,
-		"requiredTech": "Refrigeration"
-	},
-	{
-		"name": "Hydroponic Basement",
-		"replaces": "Hydroponic Farming",
-    		"uniqueTo": "The Mechanized",
-		"food": 4,
-		"specialistSlots": { "Administrator": 1},
-		"maintenance": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-			"[+2] population [in this city]",
-			"Consumes [1] [Power]",
-			"[+1 Gold, +1 Happiness] from [Lakes] tiles [in this city]"
-		],
-		"requiredTech": "Hydroponics"
-	},
-	{
-		"name": "Exotic Brew Slt",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Salt]",
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Salt]>"
-		],
-		"requiredTech": "Genetics"
-	},
-	{
-		"name": "Exotic Brew HF",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Hostile Fauna]",
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Hostile Fauna]>"
-		],
-		"requiredTech": "Genetics"
-	},
-	{
-		"name": "Exotic Brew Hny",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Honey]",
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Honey]>"
-		],
-		"requiredTech": "Chemistry"
-	},
-	{
-		"name": "Exotic Brew Med",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 6,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Medicine]",
-			"[+4] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Medicine]>"
-		],
-		"requiredTech": "Human Genome"
-	},
-	{
-		"name": "Exotic Brew T",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Tea Leaves]",
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Tea Leaves]>"
-		],
-		"requiredTech": "Chemistry"
-	},
-	{
-		"name": "Exotic Brew Sd",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Exotic Seeds]",
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Exotic Seeds]>"
-		],
-		"requiredTech": "Genetics"
-	},
-	{
-		"name": "Exotic Brew Nrc",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Narcotics]",
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Narcotics]>"
-		],
-		"requiredTech": "Genetics"
-	},
-	{
-		"name": "Exotic Brew RFN",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 3,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Refined Narcotics]",
-			"[+2] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Refined Narcotics]>"
-		],
-		"requiredTech": "Artificial Intelligence"
-	},
-	{
-		"name": "Better Organs",
-    		"uniqueTo": "The Mechanized",
-		"cost": 130,
-		"food": 6,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Harvested Organs]",
-			"[+3] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Only available <with [Harvested Organs]>"
-		],
-		"requiredTech": "Artificial Intelligence"
-	},
-	{
-		"name": "Exotic Brew Soft",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 2,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Soft Drinks]",
-			"[+2] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Soft Drinks]>"
-		],
-		"requiredTech": "Chemistry"
-	},
-	{
-		"name": "Exotic Brew Alc",
-    		"uniqueTo": "The Mechanized",
-		"cost": 75,
-		"food": 1,
-		"maintenance": 2,
-		"hurryCostModifier": 25,
-		"uniques": [
-		    	"Consumes [1] [Alcohol]",
-			"[+1] population [in this city]",
-			"Unsellable",
-			"Destroyed when the city is captured",
-			"Will not be displayed in Civilopedia",
-			"Only available <with [Alcohol]>"
-		],
-		"requiredTech": "Chemistry"
-	},
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  	{
-		"name": "Mass Energizer",
-		"replaces": "Congress",
-		"uniqueTo": "The Mechanized",
-		"cost": 100,
-		"requiredTech": "Civil Service",
-		"uniques": [
-		   	"Provides [8] [Power]",
-			"[+2] population [in this city]",
-			"[-10]% Unhappiness from [Population] [in all cities]",
-			"Unsellable",
-			"Only available <if [Life Creation Lab] is constructed>",
-			"Can only be built [in capital]",
-			"Only available <in cities without a [Mass Breedery]>",
-			"Destroyed when the city is captured"
-		   
-		]
-	},
-	{
-		"name": "Mass Breedery",
-		"cost": 50,
-		"replaces": "Council",
-		"uniqueTo": "The Mechanized",
-		"requiredTech": "Civil Service",
-		"uniques": [
-		    	"Consumes [3] [Power]",
-			"[+2] population [in this city]",
-			"[+2] population [in all cities]",
-			"Cost increases by [50] per owned city",
-			"Unsellable",
-			"Only available <if [Life Creation Lab] is constructed>",
-			"Can only be built [in capital]",
-			"Only available <in cities without a [Mass Energizer]>",
-			"Destroyed when the city is captured"
-			
-		]
-	},
-	{
-		"name": "Life Creation Lab",
-		"cost": 40,
-		"replaces": "Hospital",
-		"uniqueTo": "The Mechanized",
-		"science": -1,
-		"maintenance": 1,
-		"hurryCostModifier": 0,
-		"requiredTech": "Biology",
-		"uniques": [
-			"[+15]% Production when constructing [Unsellable] buildings [in all cities]"
-			"[+1] population [in this city]",
-			"[+1 Happiness, +1 Science] [in this city] <with [Harvested Organs]>",
-			"Consumes [1] [Power]"
-		]
-	},
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	{
-		"name": "Enslave Inferiors",
-		"uniqueTo": "The Mechanized",
-		"replaces": "Prison Camp",
-		"science": 1,
-		"hurryCostModifier": -25,
-		"cost": 20,
-		"uniques": [
-			"Unsellable",
-			"Remove extra unhappiness from annexed cities",
-			"Can only be built [in annexed cities]",
-			"Requires at least [3] population"
-			"Provides [4] [Slaves]",
-			"[-2] population [in this city]",
-			"Only available <in cities without a [Listening Post]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Construction"
-	},
-	{
-		"name": "Control Router",
-		"uniqueTo": "The Mechanized",
-		"replaces": "Listening Post",
-		"cost": 125,
-		"maintenance": 1,
-		"happiness": 1,
-		"hurryCostModifier": 25,
-		"uniques": [
-			"Unsellable",
-		    	"Consumes [1] [Power]",
-			"[+1] population [in this city]",
-			"Remove extra unhappiness from annexed cities",
-			"[+2 Happiness] [in this city] <after adopting [Constitution]>",
-			"Only available <in cities without a [Enslave Inferiors]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Networking"
-	},
-/////////////////////////////Policy replacements////////////////////////////////////////
-		{
-		"name": "Integrate Enslaved Into Society",
-		"uniqueTo": "The Mechanized",
-		"replaces": "Town Hall",
-		"cost": 120,
-		"happiness": 4,
-		"hurryCostModifier": 45,
-		"uniques": [
-			"[+1 Culture] per [4] population [in this city]",
-			"Unsellable",
-		    	"Consumes [2] [Slaves]",
-			"Only available <if [Enslave Inferiors] is constructed>"
-			"[+2] population [in this city]",
-			"Remove extra unhappiness from annexed cities",
-			"Only available <after adopting [Civil Society]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Civil Service"
-	},
-	{
-		"name": "Centralized Lifestock",
-		"uniqueTo": "The Mechanized",
-		"cost": 50,
-		"uniques": [
-			"Only available <after adopting [Centralization]>",
-			"Consumes [1] [Power]",
-			"[+3] population [in this city]",
-			"Destroyed when the city is captured",
-			"Can only be built [in capital]",
-			"Unsellable",
-		]
-	},
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	{
-		"name": "Black Smoker",
-		"uniqueTo": "The Mechanized",
-		"replaces": "Coal Plant",
-		"specialistSlots": { "Engineer": 2 },
-		"maintenance": 5,
-		"cost": 300,
-		"hurryCostModifier": 30,
-		"percentStatBonus": { "food": -30 },
-		"uniques": [
-			"Provides [12] [Power]",
-			"Consumes [3] [Coal]",
-			"Only available <in cities without a [Nuclear Plant]>","Only available <in cities without a [Recycling Plant]>",
-			"Only available <in cities with a [Library]>"
-			"[+2 Production] [in this city] <with [Coal]>",
-		],
-		"requiredTech": "Steam Power"
-	},
-	{
-		"name": "Cleaner Nucleator",
-		"uniqueTo": "The Mechanized",
-		"replaces": "Water Plant",
-		"percentStatBonus": { "gold": 5 },
-		"maintenance": 0,
-		"uniques": [
-			"[+2] population [in this city]",
-			"[+1 Gold] from [Uranium] tiles [in this city]",
-			"[+1 Gold] from [Power] tiles [in this city]",
-			"Consumes [1] [Power]",
-			"Consumes [1] [Uranium]",
-			"Unsellable",
-		],
-		"hurryCostModifier": 25,
-		"requiredTech": "Decontamination"
-	},
-//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES//CYBERAPES
-	{
-		"name": "Child Care Office",
-		"uniqueTo": "Cyberapes",
-		"replaces": "Listening Post",
-		"maintenance": 2,
-		"hurryCostModifier": 25,
-		"uniques": [
-			"[+1 Production] from every specialist [in this city]",
-			"[+1 Happiness] from [Playground] tiles [in this city]",
-			"Free [Kids Care Monkey] appears"
-			"Remove extra unhappiness from annexed cities",
-			"[+75]% Great Person generation [in this city]",
-			"[+25]% growth [in this city] <after adopting [Constitution]>",
-			"Only available <in cities without a [Prison Camp]>",
-			"Only available <in cities with a [Kindergarten]>",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Civil Service"
-	},
-	{
-		"name": "Kindergarten",
-		"uniqueTo": "Cyberapes",
-		"replaces": "Food Store",
-		"cost": 20,
-		"hurryCostModifier": -25,
-		"uniques": [
-			"Unsellable"
-			"Free [Kids Care Monkey] appears"
-			"[20]% Food is carried over after population increases [in this city]",
-			"[+15]% growth [in this city] <with [Books]>",
-			/*"[+15]% growth [in this city] <with [Data]>",
-			"[+5]% growth [in this city] <with [Electronics]>",
-			"[+5]% growth [in this city] <with [Gems]>",
-			"[+5]% growth [in this city] <with [Machine Parts]>",
-			"[+5]% growth [in this city] <with [Fabrics]>",
-			"[+5]% growth [in this city] <with [Medicin]>",
-			"[+5]% growth [in this city] <with [Honey]>",*/
-			"[+1 Food] [in this city] <with [Salt]>",
-			"[-1 Production, +1 Gold, +1 Happiness] [in this city] <with [Alcohol]>",
-			"[-1 Production, +1 Gold, +1 Happiness] [in this city] <with [Narcotics]>",
-			"[-10]% growth [in this city] <with [Alcohol]>",
-			"[-10]% growth [in this city] <with [Narcotics]>",
-			"[-1 Production, -1 Food, +1 Gold] [in this city] <with [Refined Narcotics]>",
-			"[+2 Culture] <when between [15] and [300] Happiness>"
-		]
-	},
-//<after discovering [Trade]>
-  {
-		"name": "Ape Tradition Centre",
-		"isWonder": true,
-		"uniqueTo": "Cyberapes",
-		"happiness": 1,
-	  	"production": 1,
-		"cost": 1,
-		"uniques": [
-			"[2] free [Kids Care Monkey] units appear",
-			"[2] free [Scouter Group] units appear",
-			"Allied City-States provide [Culture] equal to [+15]% of what they produce for themselves",
-			"Allied City-States provide [Faith] equal to [+25]% of what they produce for themselves",
-			"Enables conversion of city production to [Faith]",
-			"Enables conversion of city production to [Culture]",
-			"Empire enters golden age",
-			"Can only be built [in capital]",
-			"Gain a free [Kindergarten] [in this city]"
+			"[2] free [Secret Bowman] units appear",
+			"Can only be built <in [in capital] cities>",
+			"[+20 Gold, +20 Culture] whenever a Great Person is expended",
+			"[+3 Culture, +2 Science, +1 Gold] for every known Natural Wonder"
 		],
 		"quote": "quote",
 		"civilopediaText": [
@@ -563,30 +20,252 @@
 			},
 		]
 	},
-///////////////CityStates///////////
-{
-		"name": "Depletion Park",
-		"uniqueTo": "Exploiters Tribe",
-		"replaces": "Monument",
-		"cost": 1,
-		"culture": 6,
-		"gold": 1,
+	{
+		"name": "Search for Remains",
+                "uniqueTo": "TCC",
+                "replaces": "Search for Survivors",
+		"cost": 30,
+		"isNationalWonder": true,
 		"uniques": [
-                        "Provides [5] [Oil]",
-                        "Provides [1] [Coal]",
-			"Will not be displayed in Civilopedia",
-			"Reveals the entire map"
+			"[1] free random researchable Tech(s) from the [Decivilized era]",
+			"Provides [1] [Fungus]",
+			"Reveal up to [2] [Artifacts] within a [8] tile radius",
+			"Reveal up to [1] [Electronics] within a [6] tile radius",
+			"Reveal up to [1] [Machine Parts] within a [6] tile radius",
+			"Reveal up to [3] [Metal] within a [8] tile radius",
+			"Reveal up to [3] [Scrap] within a [8] tile radius",
 		]
 	},
-{
-		"name": "Goodies Consumption",
-		"uniqueTo": "Exploiters Tribe",
-		"cost": 1,
-		"production": 2,
+        {
+		"name": "Secret Society",
+                "uniqueTo": "TCC",
+                "replaces": "Town Hall",
+		"specialistSlots": {"Politician": 2},
+                "science": 1,
+		"maintenance": 1,
 		"uniques": [
-			"Provides [1] [Ivory]",
-                        "Creates a [Trading post] improvement on a specific tile",
-			"Never destroyed when the city is captured"
+                        "2 Politician Slots",
+			"[-25]% Culture cost of natural border growth [in this city]",
+			"[+1 Culture, +1 Happiness] [in this city] <with [Power]>"
+		],
+		"hurryCostModifier": 25,
+		"requiredTech": "Civil Service"
+	},
+        {
+		"name": "Public Examinum",
+                "uniqueTo": "TCC",
+                "replaces": "Museum",
+		"science": 1,
+		"specialistSlots": {"Archivar": 1},
+		"cost": 40,
+		"uniques": ["[+1 Culture, +1 Science, +1 Faith] from [Artifacts] tiles [in this city]",	"1 Archivar Slot"]
+		"hurryCostModifier": 25,
+		"requiredTech": "Secrets of the Past"
+	},
+        {
+		"name": "Private Radio Station",
+                "uniqueTo": "TCC",
+                "replaces": "Broadcast Tower",
+		"culture": 1,
+		"specialistSlots": {"Entrepreneur": 1},
+		"percentStatBonus": {"culture": 25, "gold": 10},
+		"uniques": ["1 Entrepreneur slot"],
+		"maintenance": 2,
+		"requiredTech": "Radio"
+	},
+        {
+		"name": "Local Business",
+                "uniqueTo": "TCC",
+                "replaces": "Market",
+		"specialistSlots": {"Entrepreneur": 1},
+		"hurryCostModifier": 25,
+		"requiredTech": "Trade",
+		"uniques": [
+                        "1 Entrepreneur slot instead of Merchant slots",
+			"[+1 Gold] from [Luxury resource] tiles [in this city]"
 		]
-	}
+	},
+        {
+		"name": "Scriptum",
+                "uniqueTo": "TCC",
+                "replaces": "Library",
+		"specialistSlots": {"Archivar": 1},
+		"hurryCostModifier": 25,
+		"uniques": [
+                        "1 Archivar slot",
+			"[+2 Science] [in this city] <with [Data]>",
+			"[+1 Science] per [2] population [in this city]",
+			"[+1 Science, +1 Culture] from [Books] tiles [in this city]",
+			"Enables construction of [Power] buildings"
+		],
+		"requiredTech": "Writing"
+	},
+{
+		"name": "Literature School",
+                "uniqueTo": "TCC",
+                "replaces": "Public School",
+		"maintenance": 1,
+                "faith": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"[+1 Science, +1 Culture, +1 Faith] per [3] population [in this city]",
+                        "[+1 Happiness] per [5] population [in this city]",
+			"Only available <in cities with a [Library]>",
+			"[+1 Culture] [in this city] <with [Power]>",
+                        "Consumes [1] [Books]"
+		],
+		"requiredTech": "Civil Service"
+	},
+{
+		"name": "History Sustaining Center",
+                "uniqueTo": "TCC",
+                "replaces": "Data Center",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"science": 50},
+		"specialistSlots": {"Archivar": 2},
+		"requiredTech": "Networking",
+		"uniques": [
+                        "2 Archivar slots",
+			"[+3 Science, +3 Culture] from [Data] tiles [in this city]",
+			"[+2 Science, +2 Culture] from [Encrypted Data] tiles [in this city]",
+                        "[+2 Culture, +2 Faith] [in this city] <with [Data]>",
+			"Consumes [1] [Data]"
+		]
+	},
+        {
+		"name": "Knowledge Processor",
+                "uniqueTo": "TCC",
+                "replaces": "Decryption Center",
+		"culture": 3,
+		"greatPersonPoints": {"Great Scientist": 2},
+		"specialistSlots": {"Archivar": 1},
+		"uniques": [
+                        "1 Archivar Slot",
+			"Consumes [1] [Encrypted Data]",
+			"[+2 Science] [in this city] <with [Power]>",
+			"Only available <in cities with a [Data Center]>",
+                        "Provides [1] [Data]",
+		],
+		"percentStatBonus": {"science": 25},
+		"requiredTech": "Decryption"
+	},
+        {
+		"name": "Productivity Complex",
+                "uniqueTo": "TCC",
+                "replaces": "Factory",
+                "gold": 2,
+		"percentStatBonus": {"production": 20},
+		"specialistSlots": {"Entrepreneur": 2},
+		"maintenance": 0,
+		"hurryCostModifier": 0,
+		"uniques": [
+                        "2 Entrepreneur Slots",
+			"Only available <in cities with a [Library]>",
+			"Enables construction of [advanced] units",
+			"[+3 Production] [in this city] <with [Power]>",
+			"[+1 Production] [in this city] <with [Machine Parts]>",
+			"[+1 Production] from [Machine Parts] tiles [in this city]",
+			"Consumes [1] [Power]"
+		],
+		"requiredTech": "Manufacturing"
+	},
+	{
+		"name": "Underground Dome",
+                "uniqueTo": "TCC",
+                "replaces": "Arcology Dome",
+		"food": 1,
+		"culture": 1,
+		"happiness": 1,
+		"gold": 1,
+		"percentStatBonus": {"culture": 33, "production": 10},
+		"specialistSlots": {"Politician": 1, "Entrepreneur": 1, "Farmer": 1, "Merchant": 1, "Scientist": 1},
+		"cityStrength": 7,
+		"cityHealth": 100,
+		"requiredTech": "Future Materials",
+		"uniques": [
+			"[20]% Great Person generation [in this city]",
+			"[-10]% Unhappiness from [Population] [in this city]",
+			"Only available <if [Arcology Project] is constructed>",
+			"Requires at least [2] population",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Power]",
+			"Consumes [1] [Aluminum]",
+			"Consumes [1] [Coal]"
+		]
+	},
+///The Mechanized
+  {
+		"name": "Mechanized Core",
+		"isNationalWonder": true,
+    		"replaces": "Bomb Shelter",
+    		"uniqueTo": "The Mechanized",
+		"production": 4,
+		"cityHealth": 400,
+		"science": 4,
+		"gold": 2,
+	  	"culture": 2,
+		"cost": 1,
+		"happiness": 1,
+		"uniques": ["Indicates the capital city",
+			"Provides [4] [Power]"]
+	},
+
+///Cyberapes
+	
+	{
+		"name": "Gen Restoration Project",
+		"replaces": "Council",
+		"uniqueTo": "Cyberapes",
+		"cost": 200,
+		"science": 3,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"Can breed and raise stronger Apes",
+			"New [Gorilla] units start with [15] Experience [in all cities]",
+			"Can only be built <in [in capital] cities>",
+			"Only available <in cities without a [Rainforest Restoration Project]>",
+			"Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Rainforest Restoration Project",
+		"replaces": "Congress",
+		"uniqueTo": "Cyberapes",
+		"cost": 200,
+		"science": -2,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"Unlocks Jungle Replanting Zones",
+			"[+1 Gold, +1 Culture] [in all cities connected to capital] <with [1] to [1] neighboring [Jungle Replanting Zone] tiles>",
+			"[+1 Gold, +2 Culture, +1 Food] [in all cities connected to capital] <with [2] to [2] neighboring [Jungle Replanting Zone] tiles>",
+			"[+1 Gold, +3 Culture, +1 Food] [in all cities connected to capital] <with [3] to [3] neighboring [Jungle Replanting Zone] tiles>",
+			"[+2 Gold, +4 Culture, +2 Food] [in all cities connected to capital] <with [4] to [4] neighboring [Jungle Replanting Zone] tiles>",
+			"[+2 Gold, +5 Culture, +2 Food] [in all cities connected to capital] <with [5] to [5] neighboring [Jungle Replanting Zone] tiles>",
+			"[+2 Gold, +6 Culture, +2 Food] [in all cities connected to capital] <with [6] to [6] neighboring [Jungle Replanting Zone] tiles>",
+			"[+2 Faith] from [Jungle Replanting Zone] tiles [in holy cities]",
+			"[NFT Monkey] is earned [+100]% faster",
+			"[+1 Food] from every [Merchant]",
+			"Can only be built <in [in capital] cities>",
+			"Only available <in cities without a [Gen Restoration Project]>",
+			"Destroyed when the city is captured",
+		]
+		"replacementTextForUniques": "Unlocks Jungle Replanting Zones\n+1 [Gold] in cities neighboring 1 Jungle Replanting Zone (doubled with at least 4)\n+1 [Culture] in cities for every neighboring Jungle Replanting Zone\n+1 [Food] in cities neighboring 2 Jungle Replanting Zones (doubled with at least 4)\n+2 [Faith] from Jungle Replanting Zones in holy cities\nNFT Monkey is earned 100% faster\n+1 [Food] from every Merchant\nCan only be built in capital\nOnly available in cities without a Gen Restoration Project\nDestroyed when the city is captured",
+	},
+///The Archive
+	{
+		"name": "Archive of the Arts",
+		"uniqueTo": "The Archive",
+		"cost": 1,
+		"culture": 5,
+		"science": 1,
+		"happiness": 1,
+		"specialistSlots": {"Archivar": 4},
+		"greatPersonPoints": {"Great Administrator": 2},
+		"uniques": [
+			"[+50]% Golden Age length",
+			"Provides [1] [Power]",
+			"Never destroyed when the city is captured"
+			]
+	},
   ]
